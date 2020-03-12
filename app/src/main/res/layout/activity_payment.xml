@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:card_view="http://schemas.android.com/tools"
+    tools:context=".Fragments.PaymentActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="#11A0E4"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/starjedi"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:text="Cynosure"
+            android:textSize="20sp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/bar"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:background="#85B8E0"
+            android:layout_height="wrap_content">
+            <com.shuhart.stepview.StepView
+                android:layout_marginStart="10dp"
+                android:id="@+id/step_view"
+                android:layout_width="209dp"
+                android:layout_height="37dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:sv_animationType="All"
+                app:sv_stepPadding="12dp"
+                app:sv_steps="@array/steps"
+                app:sv_typeface="@font/iran_sans_mobile" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bar"
+        android:gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Enter your Name"
+            android:background="@drawable/edittext_back"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:id="@+id/name"
+            android:textColorHint="#BBB9B9"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Email"
+            android:background="@drawable/edittext_back"
+
+            android:textColorHint="#BBB9B9"
+
+            android:inputType="textEmailAddress"
+            android:id="@+id/email"
+            android:paddingStart="20dp"
+
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Enter Phone Number"
+            android:textColorHint="#BBB9B9"
+            android:background="@drawable/edittext_back"
+            android:paddingStart="20dp"
+
+            android:inputType="phone"
+            android:id="@+id/phone"
+
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="20dp"/>
+        <Button
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:id="@+id/firstContinue"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:textAllCaps="false"
+            android:background="@drawable/reg_btn_des"
+            android:fontFamily="@font/starjedi"
+            android:layout_width="120dp"
+
+            android:layout_height="wrap_content"
+            android:text="Continue"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout2"
+        android:visibility="gone"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@+id/bar">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Do you need Accommodation?"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:orientation="horizontal">
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+
+                android:id="@+id/radioGroup"
+                >
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="Yes"
+                    android:layout_marginStart="120dp"
+                    android:onClick="onRClick"
+
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/radioButton"
+                    android:checked="false"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:onClick="onRClick"
+
+                    android:layout_marginStart="120dp"
+                    android:id="@+id/radioButton2"
+                    android:checked="false"
+                    android:textSize="20sp"
+                    />
+
+
+
+            </RadioGroup>
+        </LinearLayout>
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Enter your College"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:id="@+id/college"
+            android:textColorHint="#BBB9B9"
+            android:background="@drawable/edittext_back"
+
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <Button
+            android:layout_marginTop="25dp"
+
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:id="@+id/secondContinue"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/starjedi"
+            android:background="@drawable/reg_btn_des"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:text="Continue"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:id="@+id/layout3"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bar">
+        <LinearLayout
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            tools:context=".MainActivity">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="We use paytm as a Payment gateway which is very secured.You can either pay through paytm or any debit or credit card or net banking"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+            <Button
+                android:id="@+id/payBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay"
+                android:background="@drawable/reg_btn_des"
+                android:fontFamily="@font/starjedi"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

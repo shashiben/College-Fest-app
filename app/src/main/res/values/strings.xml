@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">CynoSurE</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="event_items">
+        <item>Paper Presentation</item>
+        <item>Quizzotica</item>
+        <item>Dazzle Coding</item>
+        <item>Web Wreathe</item>
+        <item>Tech Tambola</item>
+        <item>Mr Engineer</item>
+        <item>Algo Buider</item>
+        <item>BrainDrain Crew</item>
+        <item>Praxis Placement</item>
+        <item>Caper with Cipher</item>
+        <item>Query Crackers</item>
+        <item>Technical Hacking</item>
+    </string-array>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- OnBoard Screen. -->
+    <string name="ob_header1">unleash your potential</string>
+    <string name="ob_header2">Get Live Notifications </string>
+    <string name="ob_header3">An assemble of smarter Geeks</string>
+    <string name="ob_get_started">GET STARTED</string>
+
+    <string name="large">Cynosure is a multifaceted technical fest organized to bring out the real talent.This takes you into a whole new world combined with excited events,flawless creative designs tantalizing quizzes and feet tapping brain teasers .The whole technological ride promises you an awesome experience which is going to be now or never and leaves an impression in your minds .So come join us and have fun filled with great enthusiasm.For fun events like meme ,photo contest send your pic to facebook page mentioned below</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="cwc_desc">CAPER WITH CIPHER is an event to test your knowledge and wisdom on cryptography. It deals with decrypting CIPHER TEXT into PLAIN TEXT in different ways</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="tt_desc">We must bring you to the event Tech Tambola. Here is an exciting event but with a technical TAMBOLA !! Guess and strike QUESTION number you sliced in the Tambola slips . The team has to claim after getting the given pattern in their tambola slips will be winner. Pray your luck to be with you.
+    </string>
+    <string name="quiz_desc_tech">A general quiz oriented towards knowledge on the field of Computer science. Participants are required to compete in a number of rounds testing their knowledge in all aspects of Computer science.
+    </string>
+    <string name="quiz_desc_non">This quiz purely tests your general knowledge comprising of questions from various areas like History,Geography,Mythology,Current affairs etc…
+    </string>
+    <string name="q_c"> The Query Cracker  event at CYNOSURE2020 aims to provide the best platform to expose your skills in DBMS.This event is for geeks,who would like to explore the Data Base world  It primarily focuses on the contender talent and ability towards Database Management</string>
+    <string name="ppt_desc">This event at Cynosure aims to provide the best platform to showcase your research ideas.If you have carried out any research on the below mentioned topics,we would be more than happy to hear your ideas out.Prepare a presentation and unleash the speaker in you to grab some exciting prizes!</string>
+    <string name="mock_desc">A Mock interview will not only help you to perfect your technical skills , but also allow you to get valuable feedback on your performance so that you can ace it when you really face an interview. The job\'s struggles are real in today’s competitive world. Can you make it to the top ?The event Praxis Placement consists of 3 rounds where participants are shortlisted from each round.</string>
+</resources>

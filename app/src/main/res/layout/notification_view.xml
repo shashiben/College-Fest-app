@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="2dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="2dp"
+    app:cardUseCompatPadding="true"
+    app:cardMaxElevation="2dp"
+    android:padding="4dp"
+    android:layout_height="wrap_content">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#E9E6E6"
+
+      android:orientation="vertical">
+    <LinearLayout
+        android:background="@drawable/notificationbackground"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+      <RelativeLayout
+
+          android:layout_width="wrap_content"
+          android:layout_weight="70"
+          android:layout_gravity="center"
+          android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:id="@+id/ijk"
+            android:autoLink="all"
+            android:text="Cynosure 2020 is held on feb28-29"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2days ago"
+            android:id="@+id/tim"
+            android:layout_below="@+id/ijk"
+            android:layout_alignParentEnd="true"/>
+      </RelativeLayout>
+      <RelativeLayout
+          android:layout_width="40dp"
+          android:layout_weight="30"
+          android:gravity="center"
+          android:layout_height="match_parent">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:id="@+id/expand"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/expand_more"/>
+      </RelativeLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/luffy"
+        android:visibility="gone"
+
+        android:id="@+id/srcImage"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="fitXY"/>
+  </LinearLayout>
+</androidx.cardview.widget.CardView>
