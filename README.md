@@ -12,7 +12,7 @@ It is app for cse fest named cynosure which is made by using java and xml .Downl
  
  `app/src/main/java/payment` : It consists of files regarding payment gateway integration.
  
- `app/src/main/res : Consists of fonts,drawables,vectors,fonts,layout design files
+ `app/src/main/res` : Consists of fonts,drawables,vectors,fonts,layout design files
  
 ## Features
  - Beautiful HomeScreen.
